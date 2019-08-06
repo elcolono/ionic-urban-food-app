@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/foods/tabs/discover"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ food.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3" no-padding>
+        <ion-img [src]="food.imageUrl"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3" text-center padding>
+        <p>{{ food.description }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3" text-center padding>
+        <h4>Preis: {{ food.price }} €</h4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

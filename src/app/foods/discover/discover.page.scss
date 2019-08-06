@@ -1,0 +1,17 @@
+.image-container {
+    min-height: 150px;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    background-image: linear-gradient(to top, black 5%, transparent 100%);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+h4 {
+    color: white;
+    padding: 0px 5px;
+}
